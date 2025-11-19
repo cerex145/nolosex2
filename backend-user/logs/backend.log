@@ -1,0 +1,71 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-16T14:22:42.528-05:00  INFO 25824 --- [backend-user] [           main] c.T.backend_user.BackendUserApplication  : Starting BackendUserApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 25824 (C:\TecUnify1.2\backend-user\target\backend-user-0.0.1-SNAPSHOT.jar started by Jefferson in C:\TecUnify1.2\backend-user)
+2025-10-16T14:22:42.531-05:00 DEBUG 25824 --- [backend-user] [           main] c.T.backend_user.BackendUserApplication  : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-16T14:22:42.532-05:00  INFO 25824 --- [backend-user] [           main] c.T.backend_user.BackendUserApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T14:22:43.821-05:00  INFO 25824 --- [backend-user] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-16T14:22:43.972-05:00  INFO 25824 --- [backend-user] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 3 JPA repository interfaces.
+2025-10-16T14:22:44.627-05:00  INFO 25824 --- [backend-user] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-16T14:22:44.641-05:00  INFO 25824 --- [backend-user] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-16T14:22:44.641-05:00  INFO 25824 --- [backend-user] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-16T14:22:44.666-05:00  INFO 25824 --- [backend-user] [           main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-10-16T14:22:44.674-05:00  INFO 25824 --- [backend-user] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2087 ms
+2025-10-16T14:22:45.081-05:00  INFO 25824 --- [backend-user] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-16T14:22:45.315-05:00  INFO 25824 --- [backend-user] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@704c3bdf
+2025-10-16T14:22:45.325-05:00  INFO 25824 --- [backend-user] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-16T14:22:45.365-05:00  INFO 25824 --- [backend-user] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/backend_user (PostgreSQL 17.5)
+2025-10-16T14:22:45.431-05:00  INFO 25824 --- [backend-user] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.027s)
+2025-10-16T14:22:45.431-05:00  WARN 25824 --- [backend-user] [           main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-10-16T14:22:45.488-05:00  INFO 25824 --- [backend-user] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-10-16T14:22:45.493-05:00  INFO 25824 --- [backend-user] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-10-16T14:22:45.590-05:00  INFO 25824 --- [backend-user] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-16T14:22:45.661-05:00  INFO 25824 --- [backend-user] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-16T14:22:45.709-05:00  INFO 25824 --- [backend-user] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-16T14:22:46.048-05:00  INFO 25824 --- [backend-user] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-16T14:22:46.129-05:00  WARN 25824 --- [backend-user] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-16T14:22:46.151-05:00  INFO 25824 --- [backend-user] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-16T14:22:47.063-05:00  INFO 25824 --- [backend-user] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-16T14:22:47.134-05:00  INFO 25824 --- [backend-user] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-16T14:22:47.552-05:00 DEBUG 25824 --- [backend-user] [           main] c.T.b.filter.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-10-16T14:22:47.636-05:00  INFO 25824 --- [backend-user] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-10-16T14:22:47.637-05:00  WARN 25824 --- [backend-user] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-10-16T14:22:47.695-05:00  INFO 25824 --- [backend-user] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-16T14:22:48.962-05:00  WARN 25824 --- [backend-user] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-16T14:22:49.434-05:00  INFO 25824 --- [backend-user] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-10-16T14:22:49.843-05:00  WARN 25824 --- [backend-user] [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-16T14:22:50.356-05:00  WARN 25824 --- [backend-user] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-16T14:22:50.361-05:00  INFO 25824 --- [backend-user] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-16T14:22:50.364-05:00  INFO 25824 --- [backend-user] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-16T14:22:50.368-05:00  INFO 25824 --- [backend-user] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-16T14:22:50.398-05:00  INFO 25824 --- [backend-user] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-16T14:22:50.433-05:00 ERROR 25824 --- [backend-user] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
